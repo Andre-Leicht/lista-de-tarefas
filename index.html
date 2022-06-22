@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+    <title>Minhas Tarefas</title>
+</head>
+<body>
+    <header>
+        <h1>Tarefas</h1>
+    </header>
+    <main>
+        <ul></ul>
+    </main>
+    <footer>
+      <input>
+         <button onclick="Add()">Adicionar</button>
+    </footer>
+    
+    <script>
+
+        //estado da aplicação
+        const tarefas = ['Estudar HTML', 'Estudar CSS', 'Estudar Java Script']
+
+        console.log(tarefas)
+        function Add() {
+            const input = document.querySelector("input")
+            const tarefa = input.value
+            tarefas.push(tarefa)
+            input.value = ""
+            render()
+        }
+
+        function render() {
+            const ul = document.querySelector("ul")
+            ul.innerHTML = null
+
+            tarefas.forEach(function(tarefa){
+                const li = document.createElement("li")
+                li.innerText = tarefa
+                ul.appendChild(li)
+            })
+            
+            
+        }
+
+        render()
+
+    </script>
+</body>
+</html>

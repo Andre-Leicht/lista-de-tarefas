@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    border: 15px solid rgb(10, 18, 18);
+    text-align: left;
+    background-color: darkred;
+    color: black;
+    margin: 0px;
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    border: 7.5px solid rgb(36, 35, 35);
+    border-style: double;
+    text-align: center;
+}
+main{
+    flex: auto;
+    border: 7.5px solid rgb(47, 10, 10);
+    border-radius: 36px;
+}
+main ul{
+    padding-left: 30px;
+    list-style: decimal;
+}
+main li{
+    border-bottom: 3px double;
+    padding-top: 7px;
+}
+footer{
+    border: 7.5px solid rgb(36, 35, 35);
+    border-style: double;
+    display: flex;
+}
+footer input{
+    flex: auto;
+    padding: 3.25px;
+}
