@@ -1,41 +1,25 @@
 *{
     box-sizing: border-box;
+    background-color: lightblue;
+    
 }
 body{
-    border: 15px solid rgb(10, 18, 18);
-    text-align: left;
-    background-color: darkred;
-    color: black;
-    margin: 0px;
-    min-height: 100vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-}
-header{
-    border: 7.5px solid rgb(36, 35, 35);
-    border-style: double;
     text-align: center;
+    border-radius: 37px;
+    color: rgb(6, 6, 6);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-width: 100vh;
+    
 }
-main{
-    flex: auto;
-    border: 7.5px solid rgb(47, 10, 10);
-    border-radius: 36px;
+button{
+    color: rgb(0, 0, 0);
+    border-radius: 40px;
+    background-color: whitesmoke;
 }
-main ul{
-    padding-left: 30px;
-    list-style: decimal;
-}
-main li{
-    border-bottom: 3px double;
-    padding-top: 7px;
-}
-footer{
-    border: 7.5px solid rgb(36, 35, 35);
-    border-style: double;
-    display: flex;
-}
-footer input{
-    flex: auto;
-    padding: 3.25px;
+input{
+    border-radius: 40px;
+    background-color: whitesmoke;
 }

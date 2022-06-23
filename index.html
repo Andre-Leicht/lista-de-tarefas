@@ -1,50 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="style.css">
-    <title>Minhas Tarefas</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Minha Listinha</title>
+    
 </head>
 <body>
     <header>
-        <h1>Tarefas</h1>
+        <h1>Minha Lista</h1>
     </header>
     <main>
-        <ul></ul>
     </main>
     <footer>
-      <input>
-         <button onclick="Add()">Adicionar</button>
-    </footer>
+        <div>
+            <input type="text">
+            <button onclick="Adicionar()">+</button>
+            <button onclick="Apagar()">Limpar</button>
+            <ol></ol>
+    </div>
+</footer>
     
-    <script>
-
-        //estado da aplicação
-        const tarefas = ['Estudar HTML', 'Estudar CSS', 'Estudar Java Script']
-
-        console.log(tarefas)
-        function Add() {
-            const input = document.querySelector("input")
-            const tarefa = input.value
-            tarefas.push(tarefa)
-            input.value = ""
-            render()
-        }
-
-        function render() {
-            const ul = document.querySelector("ul")
-            ul.innerHTML = null
-
-            tarefas.forEach(function(tarefa){
-                const li = document.createElement("li")
-                li.innerText = tarefa
-                ul.appendChild(li)
-            })
-            
-            
-        }
-
-        render()
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
