@@ -6,16 +6,18 @@
 body{
     box-sizing: border-box;
     display: flex;
+    display: grid;
+    place-items: center;
     flex-direction: column;
     text-align: center;
-    border-radius: 37px;
-    color: rgb(6, 6, 6);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border-width: 100vh;
-    
+}
+h1{
+    background: rgb(167, 167, 238);
+    border-radius: 30px;
+    padding: 10px;
 }
 button{
-    color: rgb(0, 0, 0);
     border-radius: 40px;
     background-color: whitesmoke;
 }
