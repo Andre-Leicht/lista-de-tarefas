@@ -4,7 +4,6 @@ let oseias = []
 
 function Adicionar() {
     oseias.push(andre.value)
-    console.log(oseias)
     render()
     andre.value = ''
 }
